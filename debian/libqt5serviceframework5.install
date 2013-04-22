@@ -1,0 +1,4 @@
+usr/lib/*/libQt5ServiceFramework.so.*
+usr/lib/*/qt5/qml/QtServiceFramework/plugins.qmltypes
+usr/lib/*/qt5/qml/QtServiceFramework/libdeclarative_serviceframework.so
+usr/lib/*/qt5/qml/QtServiceFramework/qmldir

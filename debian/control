@@ -1,0 +1,124 @@
+Source: qtsystems
+Section: libs
+Priority: extra
+Maintainer: Timo Jyrinki <timo-jyrinki@ubuntu.com>
+Build-Depends: debhelper (>= 9.0.0),
+               qtbase5-private-dev,
+               qtdeclarative5-private-dev,
+               qt5-default,
+               pkg-kde-tools,
+Standards-Version: 3.9.4
+Homepage: http://qt-project.org/
+
+Package: libqt5serviceframework5
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Systems module - 
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Service Framework part of the Qt Systems module.
+
+Package: libqt5publishsubscribe5
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Systems module - 
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Publish Subscribe part of the Qt Systems module.
+
+Package: libqt5systeminfo5
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Systems module - 
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the System Info part of the Qt Systems module.
+
+Package: qtsystems5-dev
+Section: libdevel
+Architecture: any
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: libqt5serviceframework5 (= ${binary:Version}),
+         libqt5publishsubscribe5 (= ${binary:Version}),
+         libqt5systeminfo5 (= ${binary:Version}),
+         ${misc:Depends}
+Description: Qt 5 Systems development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the header development files used for building Qt 5
+ applications using Qt Systems libraries.
+
+Package: qtsystems5-private-dev
+Architecture: any
+Section: libdevel
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: libqt5serviceframework5 (= ${binary:Version}),
+         libqt5publishsubscribe5 (= ${binary:Version}),
+         libqt5systeminfo5 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Qt 5 Systems private development files
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the private header development files for building some
+ Qt 5 applications using systems private headers.
+ .
+ Use at your own risk.
+
+Package: qtsystems5-tools
+Architecture: any
+Section: libdevel
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: libqt5serviceframework5 (= ${binary:Version}),
+         libqt5publishsubscribe5 (= ${binary:Version}),
+         libqt5systeminfo5 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Qt 5 Systems tools
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the sfwlisten and servicefw tools for Qt 5 
+ Systems module.
+
+Package: qtsystems5-examples
+Architecture: any
+Section: libdevel
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: libqt5serviceframework5 (= ${binary:Version}),
+         libqt5publishsubscribe5 (= ${binary:Version}),
+         libqt5systeminfo5 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Qt 5 Systems examples
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the examples for Qt 5 Systems.
+
+Package: qtsystems5-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: libqt5serviceframework5 (= ${binary:Version}),
+         libqt5publishsubscribe5 (= ${binary:Version}),
+         libqt5systeminfo5 (= ${binary:Version}),
+         ${misc:Depends}
+Description: Qt Systems library debugging symbols
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the debugging symbols for the Qt 5 Systems
+ libraries.
+
