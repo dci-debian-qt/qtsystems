@@ -1,4 +1,4 @@
 usr/lib/*/libQt5PublishSubscribe.so.*
+usr/lib/*/qt5/qml/QtPublishSubscribe/libdeclarative_publishsubscribe.so
 usr/lib/*/qt5/qml/QtPublishSubscribe/plugins.qmltypes
 usr/lib/*/qt5/qml/QtPublishSubscribe/qmldir
-usr/lib/*/qt5/qml/QtPublishSubscribe/libdeclarative_publishsubscribe.so
