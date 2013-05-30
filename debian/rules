@@ -13,6 +13,26 @@ export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 override_dh_auto_configure:
 	qmake
 
+override_dh_auto_install:
+	dh_auto_install
+
+	# Fix wrong path in pkgconfig files
+	find $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig -type f -name '*.pc' \
+	-exec sed -i -e 's/$(DEB_HOST_MULTIARCH)\/$(DEB_HOST_MULTIARCH)/$(DEB_HOST_MULTIARCH)/g' {} \;
+
+	# Fix wrong permissions in examples.
+	find $(CURDIR)/debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/examples/ -type f \( \
+	-name '*.png' \
+	-o -name '*.php' \
+	-o -name '*.xsl' \
+	-o -name '*.xml' \
+	-o -name '*.js' \
+	-o -name '*.jpg' \
+	\) -print0 | xargs -0 chmod a-x
+
+	# Remove libtool-like files
+	rm -f debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/*.la
+
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
 
