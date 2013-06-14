@@ -1,8 +1,8 @@
 Source: qtsystems-opensource-src
 Section: libs
-Priority: extra
+Priority: optional
 Maintainer: Timo Jyrinki <timo-jyrinki@ubuntu.com>
-Build-Depends: debhelper (>= 9.0.0),
+Build-Depends: debhelper (>= 9),
                pkg-kde-tools,
                qt5-default,
                qtbase5-private-dev,
@@ -17,7 +17,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt Systems module -
+Description: Qt Systems module - service framework
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
@@ -32,7 +32,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt Systems module -
+Description: Qt Systems module - publish subscribe
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
@@ -47,7 +47,7 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Qt Systems module -
+Description: Qt Systems module - system info
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
