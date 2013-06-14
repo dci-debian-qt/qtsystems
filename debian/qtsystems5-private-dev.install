@@ -49,6 +49,8 @@ usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qscreensaver_win_p.h
 usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qstorageinfo_linux_p.h
 usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qstorageinfo_mac_p.h
 usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qstorageinfo_win_p.h
+usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qsystemalignedtimer_linux_p.h
+usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qsystemalignedtimer_stub_p.h
 usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qsysteminfo_simulator_p.h
 usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qsysteminfobackend_simulator_p.h
 usr/include/qt5/QtSystemInfo/*/QtSystemInfo/private/qsysteminfoconnection_simulator_p.h
