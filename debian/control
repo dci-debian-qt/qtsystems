@@ -22,6 +22,10 @@ Description: Qt Systems module -
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the Service Framework part of the Qt Systems module.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: libqt5publishsubscribe5
 Architecture: any
@@ -33,6 +37,10 @@ Description: Qt Systems module -
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the Publish Subscribe part of the Qt Systems module.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: libqt5systeminfo5
 Architecture: any
@@ -44,6 +52,10 @@ Description: Qt Systems module -
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the System Info part of the Qt Systems module.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: qtsystems5-dev
 Section: libdevel
@@ -60,6 +72,10 @@ Description: Qt 5 Systems development files
  .
  This package contains the header development files used for building Qt 5
  applications using Qt Systems libraries.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: qtsystems5-private-dev
 Architecture: any
@@ -75,6 +91,10 @@ Description: Qt 5 Systems private development files
  Qt 5 applications using systems private headers.
  .
  Use at your own risk.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: qtsystems5-tools
 Architecture: any
@@ -91,6 +111,10 @@ Description: Qt 5 Systems tools
  .
  This package contains the sfwlisten and servicefw tools for Qt 5 
  Systems module.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: qtsystems5-examples
 Architecture: any
@@ -103,6 +127,10 @@ Description: Qt 5 Systems examples
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the examples for Qt 5 Systems.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
 Package: qtsystems5-dbg
 Priority: extra
@@ -119,4 +147,8 @@ Description: Qt Systems library debugging symbols
  .
  This package contains the debugging symbols for the Qt 5 Systems
  libraries.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git 
+ snapshot of an ongoing development. The package is very likely to 
+ change in a binary incompatible way, and no guarantees are given.
 
