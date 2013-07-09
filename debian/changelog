@@ -1,6 +1,6 @@
 qtsystems-opensource-src (5.0~git20130614-1) UNRELEASED; urgency=low
 
-  * Initial release
+  * Initial release. (Closes: #697509)
   * debian/patches/revert_module_version.patch:
     - Revert to non-zero version number
   * debian/patches/add_license_files.patch:
