@@ -1,4 +1,1 @@
 usr/lib/*/libQt5SystemInfo.so.*
-usr/lib/*/qt5/qml/QtSystemInfo/libdeclarative_systeminfo.so
-usr/lib/*/qt5/qml/QtSystemInfo/plugins.qmltypes
-usr/lib/*/qt5/qml/QtSystemInfo/qmldir

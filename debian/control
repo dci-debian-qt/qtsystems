@@ -27,6 +27,21 @@ Description: Qt Systems module - service framework
  snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
+Package: qtdeclarative5-serviceframework-plugin
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: libqt5serviceframework5, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Systems module - service framework QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Qt Service Framework QML plugin for Qt Declarative.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
+ change in a binary incompatible way, and no guarantees are given.
+
 Package: libqt5publishsubscribe5
 Architecture: any
 Multi-Arch: same
@@ -42,6 +57,21 @@ Description: Qt Systems module - publish subscribe
  snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
+Package: qtdeclarative5-publishsubscribe-plugin
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: libqt5publishsubscribe5, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Systems module - publish subscribe QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Qt Publish Subscribe QML plugin for Qt Declarative.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
+ change in a binary incompatible way, and no guarantees are given.
+
 Package: libqt5systeminfo5
 Architecture: any
 Multi-Arch: same
@@ -52,6 +82,21 @@ Description: Qt Systems module - system info
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package contains the System Info part of the Qt Systems module.
+ .
+ WARNING: This module is not an official part of Qt 5, but instead a git
+ snapshot of an ongoing development. The package is very likely to
+ change in a binary incompatible way, and no guarantees are given.
+
+Package: qtdeclarative5-systeminfo-plugin
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: libqt5systeminfo5, ${misc:Depends}, ${shlibs:Depends}
+Description: Qt Systems module - System Info QML plugin
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Qt System Info QML plugin for Qt Declarative.
  .
  WARNING: This module is not an official part of Qt 5, but instead a git
  snapshot of an ongoing development. The package is very likely to
