@@ -106,7 +106,6 @@ Description: Qt Systems module - System Info QML plugin
 Package: qtsystems5-dev
 Section: libdevel
 Architecture: any
-Pre-Depends: dpkg (>= 1.15.6~)
 Depends: libqt5publishsubscribe5 (= ${binary:Version}),
          libqt5serviceframework5 (= ${binary:Version}),
          libqt5systeminfo5 (= ${binary:Version}),
@@ -126,7 +125,6 @@ Description: Qt 5 Systems development files
 Package: qtsystems5-private-dev
 Architecture: any
 Section: libdevel
-Pre-Depends: dpkg (>= 1.15.6~)
 Depends: qtsystems5-dev (= ${binary:Version}), ${misc:Depends}
 Description: Qt 5 Systems private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
@@ -144,7 +142,7 @@ Description: Qt 5 Systems private development files
 Package: qtsystems5-tools
 Architecture: any
 Section: libdevel
-Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Depends: libqt5publishsubscribe5 (= ${binary:Version}),
          libqt5serviceframework5 (= ${binary:Version}),
          libqt5systeminfo5 (= ${binary:Version}),
@@ -164,7 +162,7 @@ Description: Qt 5 Systems tools
 Package: qtsystems5-examples
 Architecture: any
 Section: libdevel
-Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 Systems examples
  Qt is a cross-platform C++ application framework. Qt's primary feature
