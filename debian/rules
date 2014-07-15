@@ -11,6 +11,7 @@ export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 	dh $@ --parallel --with pkgkde_symbolshelper --dbg-package=qtsystems5-dbg
 
 override_dh_auto_configure:
+	mkdir .git
 	qmake "CONFIG+=ofono upower udisks"
 
 override_dh_auto_install:
