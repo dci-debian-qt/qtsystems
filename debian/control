@@ -29,7 +29,7 @@ Description: Qt Systems module - service framework
  snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
-Package: qml-module-serviceframework
+Package: qml-module-qtserviceframework
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
@@ -62,7 +62,7 @@ Description: Qt Systems module - publish subscribe
  snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
-Package: qml-module-publishsubscribe
+Package: qml-module-qtpublishsubscribe
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
@@ -95,7 +95,7 @@ Description: Qt Systems module - system info
  snapshot of an ongoing development. The package is very likely to
  change in a binary incompatible way, and no guarantees are given.
 
-Package: qml-module-systeminfo
+Package: qml-module-qtsysteminfo
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
