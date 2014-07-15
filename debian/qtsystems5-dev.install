@@ -29,8 +29,6 @@ usr/include/*/qt5/QtServiceFramework/qservicereply.h
 usr/include/*/qt5/QtServiceFramework/qtserviceframeworkversion.h
 usr/include/*/qt5/QtSystemInfo/QBatteryInfo
 usr/include/*/qt5/QtSystemInfo/QDeviceInfo
-usr/include/*/qt5/QtSystemInfo/QDeviceProfile
-usr/include/*/qt5/QtSystemInfo/QDisplayInfo
 usr/include/*/qt5/QtSystemInfo/QNetworkInfo
 usr/include/*/qt5/QtSystemInfo/QScreenSaver
 usr/include/*/qt5/QtSystemInfo/QStorageInfo
@@ -38,8 +36,6 @@ usr/include/*/qt5/QtSystemInfo/QtSystemInfo
 usr/include/*/qt5/QtSystemInfo/QtSystemInfoVersion
 usr/include/*/qt5/QtSystemInfo/qbatteryinfo.h
 usr/include/*/qt5/QtSystemInfo/qdeviceinfo.h
-usr/include/*/qt5/QtSystemInfo/qdeviceprofile.h
-usr/include/*/qt5/QtSystemInfo/qdisplayinfo.h
 usr/include/*/qt5/QtSystemInfo/qnetworkinfo.h
 usr/include/*/qt5/QtSystemInfo/qscreensaver.h
 usr/include/*/qt5/QtSystemInfo/qstorageinfo.h
@@ -53,4 +49,7 @@ usr/lib/*/libQt5ServiceFramework.so
 usr/lib/*/libQt5SystemInfo.prl
 usr/lib/*/libQt5SystemInfo.so
 usr/lib/*/pkgconfig/*
-usr/share/qt5/mkspecs/modules/*
+usr/lib/*/qt5/mkspecs/modules/*
+usr/include/*/qt5/QtServiceFramework/QtServiceFrameworkDepends
+usr/include/*/qt5/QtPublishSubscribe/QtPublishSubscribeDepends
+usr/include/*/qt5/QtSystemInfo/QtSystemInfoDepends
