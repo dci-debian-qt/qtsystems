@@ -1,0 +1,30 @@
+From 0431253ea80ac0dbd43002bb3626c59b531b2aea Mon Sep 17 00:00:00 2001
+From: Alex Blasche <alexander.blasche@digia.com>
+Date: Mon, 16 Dec 2013 16:48:11 +0100
+Subject: [PATCH] Fix qserviceinterfacedescriptor unit test
+
+It seems the debug stream removes a space at its end.
+
+Change-Id: I2a4677d3fd2a136238034ea1a4ea5ed3dd618a86
+Reviewed-by: Robin Burchell <robin+qt@viroteck.net>
+Reviewed-by: Alex Blasche <alexander.blasche@digia.com>
+---
+ .../tst_qserviceinterfacedescriptor.cpp            |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/tests/auto/serviceframework/qserviceinterfacedescriptor/tst_qserviceinterfacedescriptor.cpp b/tests/auto/serviceframework/qserviceinterfacedescriptor/tst_qserviceinterfacedescriptor.cpp
+index 22085c0..e1d1ffd 100644
+--- a/tests/auto/serviceframework/qserviceinterfacedescriptor/tst_qserviceinterfacedescriptor.cpp
++++ b/tests/auto/serviceframework/qserviceinterfacedescriptor/tst_qserviceinterfacedescriptor.cpp
+@@ -345,7 +345,7 @@ void tst_QServiceInterfaceDescriptor::testDebugStream()
+     qInstallMessageHandler(customMsgHandler);
+     qDebug() << valid2 << invalid;
+     QCOMPARE(type, QtDebugMsg);
+-    QCOMPARE(msg,QString::fromLatin1("QServiceInterfaceDescriptor(service=\"name2\", interface=\"interface2 5.6\") QServiceInterfaceDescriptor(invalid) "));
++    QCOMPARE(msg,QString::fromLatin1("QServiceInterfaceDescriptor(service=\"name2\", interface=\"interface2 5.6\") QServiceInterfaceDescriptor(invalid)"));
+     qInstallMessageHandler(0);
+ }
+ #endif
+-- 
+1.7.1
+
