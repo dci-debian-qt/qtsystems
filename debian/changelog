@@ -1,4 +1,4 @@
-qtsystems-opensource-src (5.0~git20130614-1) UNRELEASED; urgency=low
+qtsystems-opensource-src (5.0~git20130712-1) UNRELEASED; urgency=low
 
   [ Timo Jyrinki ]
   * Initial release. (Closes: #697509)
