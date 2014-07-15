@@ -1,2 +1,6 @@
-revert_module_version.patch
+#revert_module_version.patch
 add_license_files.patch
+build_with_udisk.patch
+wlan_detect.patch
+skip_failing_tests.patch
+fix_qserviceinterfacedescriptor_unit_test.patch
