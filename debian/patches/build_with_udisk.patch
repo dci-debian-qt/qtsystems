@@ -1,0 +1,21 @@
+--- qtsystems-opensource-src-5.0~git20130712/doc/src/systeminfo/systeminfo.qdoc	2013-07-12 09:41:04.000000000 +0200
++++ qtsystems-opensource-src-5.0~git20130712.build/doc/src/systeminfo/systeminfo.qdoc	2013-08-09 10:18:23.750054794 +0200
+@@ -47,6 +47,7 @@
+ 
+      * CONFIG+=upower (linux) will build the UPower dbus backend.
+      * CONFIG+=ofono (linux) will build the Ofono dbus backend.
++     * CONFIG+=udisk (linux) will build the Udisk dbus backend.
+      * CONFIG+=nox11option (linux) Turns off the use of x11 in QScreenSaver (and screen blanking
+      disabling and enabling will not work)
+ 
+--- qtsystems-opensource-src-5.0~git20130712/src/systeminfo/systeminfo.pro	2013-07-12 09:41:04.000000000 +0200
++++ qtsystems-opensource-src-5.0~git20130712.build/src/systeminfo/systeminfo.pro	2013-08-09 10:17:33.546053282 +0200
+@@ -92,7 +92,7 @@
+             DEFINES += QT_NO_OFONO
+         }
+ 
+-        config_udisks {
++        contains(CONFIG,udisks): {
+             QT_PRIVATE += dbus
+         } else: {
+             DEFINES += QT_NO_UDISKS
