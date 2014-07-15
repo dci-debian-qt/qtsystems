@@ -2,12 +2,12 @@ Source: qtsystems-opensource-src
 Section: libs
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Timo Jyrinki <timo@debian.org>
+Uploaders: Timo Jyrinki <timo@debian.org>,
 Build-Depends: debhelper (>= 9),
+               libqt5sql5-sqlite (>= 5.3.0~),
                pkg-kde-tools,
                qtbase5-private-dev (>= 5.3.0~),
                qtdeclarative5-private-dev (>= 5.3.0~),
-               libqt5sql5-sqlite (>= 5.3.0~),
 Standards-Version: 3.9.4
 Homepage: http://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtsystems.git
@@ -16,8 +16,9 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtsystems.git;a=summ
 Package: libqt5serviceframework5
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt Systems module - service framework
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -31,8 +32,10 @@ Description: Qt Systems module - service framework
 Package: qtdeclarative5-serviceframework-plugin
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5serviceframework5, ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: libqt5serviceframework5,
+         ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt Systems module - service framework QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -46,8 +49,9 @@ Description: Qt Systems module - service framework QML plugin
 Package: libqt5publishsubscribe5
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt Systems module - publish subscribe
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -61,8 +65,10 @@ Description: Qt Systems module - publish subscribe
 Package: qtdeclarative5-publishsubscribe-plugin
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5publishsubscribe5, ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: libqt5publishsubscribe5,
+         ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt Systems module - publish subscribe QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -76,8 +82,9 @@ Description: Qt Systems module - publish subscribe QML plugin
 Package: libqt5systeminfo5
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt Systems module - system info
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -91,8 +98,10 @@ Description: Qt Systems module - system info
 Package: qtdeclarative5-systeminfo-plugin
 Architecture: any
 Multi-Arch: same
-Pre-Depends: ${misc:Pre-Depends}
-Depends: libqt5systeminfo5, ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: libqt5systeminfo5,
+         ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt Systems module - System Info QML plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -110,7 +119,7 @@ Depends: libqt5publishsubscribe5 (= ${binary:Version}),
          libqt5serviceframework5 (= ${binary:Version}),
          libqt5systeminfo5 (= ${binary:Version}),
          qtbase5-dev,
-         ${misc:Depends}
+         ${misc:Depends},
 Description: Qt 5 Systems development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -125,7 +134,8 @@ Description: Qt 5 Systems development files
 Package: qtsystems5-private-dev
 Architecture: any
 Section: libdevel
-Depends: qtsystems5-dev (= ${binary:Version}), ${misc:Depends}
+Depends: qtsystems5-dev (= ${binary:Version}),
+         ${misc:Depends},
 Description: Qt 5 Systems private development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -142,12 +152,12 @@ Description: Qt 5 Systems private development files
 Package: qtsystems5-tools
 Architecture: any
 Section: libdevel
-Pre-Depends: ${misc:Pre-Depends}
+Pre-Depends: ${misc:Pre-Depends},
 Depends: libqt5publishsubscribe5 (= ${binary:Version}),
          libqt5serviceframework5 (= ${binary:Version}),
          libqt5systeminfo5 (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: Qt 5 Systems tools
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -162,8 +172,9 @@ Description: Qt 5 Systems tools
 Package: qtsystems5-examples
 Architecture: any
 Section: libdevel
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends},
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
 Description: Qt 5 Systems examples
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -181,8 +192,8 @@ Section: debug
 Depends: libqt5publishsubscribe5 (= ${binary:Version}),
          libqt5serviceframework5 (= ${binary:Version}),
          libqt5systeminfo5 (= ${binary:Version}),
-         ${misc:Depends}
-Suggests: qtsystems5-examples (= ${binary:Version})
+         ${misc:Depends},
+Suggests: qtsystems5-examples (= ${binary:Version}),
 Description: Qt Systems library debugging symbols
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
