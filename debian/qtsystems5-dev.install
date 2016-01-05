@@ -31,14 +31,12 @@ usr/include/*/qt5/QtSystemInfo/QBatteryInfo
 usr/include/*/qt5/QtSystemInfo/QDeviceInfo
 usr/include/*/qt5/QtSystemInfo/QNetworkInfo
 usr/include/*/qt5/QtSystemInfo/QScreenSaver
-usr/include/*/qt5/QtSystemInfo/QStorageInfo
 usr/include/*/qt5/QtSystemInfo/QtSystemInfo
 usr/include/*/qt5/QtSystemInfo/QtSystemInfoVersion
 usr/include/*/qt5/QtSystemInfo/qbatteryinfo.h
 usr/include/*/qt5/QtSystemInfo/qdeviceinfo.h
 usr/include/*/qt5/QtSystemInfo/qnetworkinfo.h
 usr/include/*/qt5/QtSystemInfo/qscreensaver.h
-usr/include/*/qt5/QtSystemInfo/qstorageinfo.h
 usr/include/*/qt5/QtSystemInfo/qsysteminfoglobal.h
 usr/include/*/qt5/QtSystemInfo/qtsysteminfoversion.h
 usr/lib/*/cmake/*

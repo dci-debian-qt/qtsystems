@@ -1,5 +1,3 @@
-add_license_files.patch
 build_with_udisk.patch
-wlan_detect.patch
 skip_failing_tests.patch
-fix_qserviceinterfacedescriptor_unit_test.patch
+unity-screen.diff

@@ -1,5 +1,5 @@
---- qtsystems-opensource-src-5.0~git20130712/doc/src/systeminfo/systeminfo.qdoc	2013-07-12 09:41:04.000000000 +0200
-+++ qtsystems-opensource-src-5.0~git20130712.build/doc/src/systeminfo/systeminfo.qdoc	2013-08-09 10:18:23.750054794 +0200
+--- a/doc/src/systeminfo/systeminfo.qdoc
++++ b/doc/src/systeminfo/systeminfo.qdoc
 @@ -47,6 +47,7 @@
  
       * CONFIG+=upower (linux) will build the UPower dbus backend.
@@ -8,9 +8,9 @@
       * CONFIG+=nox11option (linux) Turns off the use of x11 in QScreenSaver (and screen blanking
       disabling and enabling will not work)
  
---- qtsystems-opensource-src-5.0~git20130712/src/systeminfo/systeminfo.pro	2013-07-12 09:41:04.000000000 +0200
-+++ qtsystems-opensource-src-5.0~git20130712.build/src/systeminfo/systeminfo.pro	2013-08-09 10:17:33.546053282 +0200
-@@ -92,7 +92,7 @@
+--- a/src/systeminfo/systeminfo.pro
++++ b/src/systeminfo/systeminfo.pro
+@@ -87,7 +87,7 @@
              DEFINES += QT_NO_OFONO
          }
  

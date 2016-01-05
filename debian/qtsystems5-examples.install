@@ -1,8 +1,4 @@
 usr/lib/*/qt5/examples/sysinfo/qml-battery/qml-battery
 usr/lib/*/qt5/examples/sysinfo/qml-battery/qml-battery.qml
-usr/lib/*/qt5/examples/sysinfo/qml-storageinfo/content/ProgressBar.qml
-usr/lib/*/qt5/examples/sysinfo/qml-storageinfo/content/background.png
-usr/lib/*/qt5/examples/sysinfo/qml-storageinfo/qml-storage.qml
-usr/lib/*/qt5/examples/sysinfo/qml-storageinfo/qml-storageinfo
 usr/lib/*/qt5/examples/systeminfo/qml-deviceinfo/qml-deviceinfo
 usr/lib/*/qt5/examples/systeminfo/qml-deviceinfo/qml-deviceinfo.qml
